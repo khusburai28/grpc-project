@@ -45,15 +45,15 @@ grpc-project/
 
 1. Server
 
-[](docs/server.png)
+![](docs/server.png)
 
 2. Client 1
 
-[](docs/client.png)
+![](docs/client.png)
 
 3. Client 2
 
-[](docs/client2.png)
+![](docs/client2.png)
 
 ### Usage
 
