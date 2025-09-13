@@ -41,6 +41,20 @@ grpc-project/
    cd chat-client-2 && mvn compile exec:java -Dexec.mainClass="com.example.grpc.chat.ChatClient2"
    ```
 
+### Screenshot
+
+1. Server
+
+[](docs/server.png)
+
+2. Client 1
+
+[](docs/client.png)
+
+3. Client 2
+
+[](docs/client2.png)
+
 ### Usage
 
 - Type messages in either client terminal and press Enter
