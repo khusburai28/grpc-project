@@ -1,0 +1,22 @@
+// Specify the version of protocol buffers.
+syntax = "proto3";
+
+// Set the package name for the generated Java code.
+option java_package = "com.example.grpc.chat";
+// Set the outer class name for the generated Java code.
+option java_outer_classname = "ChatProto";
+// Set a flag to make the outer class a static final class.
+option java_multiple_files = true;
+
+// Define the gRPC service for our chat application.
+service ChatService {
+  // Define a bidirectional streaming RPC method.
+  // This allows both the client and the server to send a stream of messages.
+  rpc chat(stream ChatMessage) returns (stream ChatMessage);
+}
+
+// Define the message format for a chat message.
+// It contains a single string field for the message content.
+message ChatMessage {
+  string content = 1;
+}
